@@ -1,0 +1,1206 @@
+Aluna: Eny Alves Martins – 2016366 
+
+Curso: Análise e Desenvolvimento de Sistemas - 3º período 
+
+ 
+
+Exercicios Slide 4 
+
+Faça um algoritmo que receba 3 números e multiplique todos e mostre o valor; 
+
+Resolução 1: 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+#include <stdlib.h> //biblioteca do system pause 
+
+#include <locale.h> //biblioteca de acentuação 
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int num1, num2, num3, resultado; 
+
+     
+
+printf("Digite um número inteiro: "); 
+
+scanf("%d", &num1); 
+
+printf("Digite um número inteiro: "); 
+
+scanf("%d", &num2); 
+
+printf("Digite um número inteiro: "); 
+
+scanf("%d", &num3); 
+
+resultado = num1 * num2 * num3; 
+
+printf("O resultado da multiplicação dos números é: %d", resultado); 
+
+} 
+
+ 
+
+Resolução 2: 
+
+#include <stdio.h> 
+
+#include<locale.h>  
+
+  
+
+int main ()  
+
+{  
+
+setlocale(LC_ALL, "");  
+
+  
+
+int numero, multip=1;  
+
+  
+
+for(int i=1; i <=3; i++){  
+
+  
+
+printf("Digite um número: ");  
+
+scanf("%d", &numero);  
+
+multip *= numero; 
+
+} 
+
+printf("Multiplicação de todos os números digitados: %d", multip); 
+
+  
+
+return 0;  
+
+} 
+
+Faça um algorítmo que mostre a média das idades de 5 pessoas; 
+
+ 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+#include <locale.h> //biblioteca de acentuação 
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int idade1, idade2, idade3, idade4, idade5, media_das_idades;   
+
+printf("Digite a primeira idade: "); 
+
+scanf("%d", &idade1); 
+
+printf("Digite a segunda idade: "); 
+
+scanf("%d", &idade2); 
+
+printf("Digite a terceira idade: "); 
+
+scanf("%d", &idade3); 
+
+printf("Digite a quarta idade: "); 
+
+scanf("%d", &idade4); 
+
+printf("Digite a quinta idade: "); 
+
+scanf("%d", &idade5); 
+
+  
+
+media_das_idades = (idade1+idade2+idade3+idade4+idade5)/5; 
+
+  
+
+printf("A média das idades é de: %d", media_das_idades); 
+
+  
+
+} 
+
+Faça um algorítmo que entre com o salário e dê um aumento de 35% sobre o valor do salário, no final mostre todos; 
+
+ 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+#include <locale.h> //biblioteca de acentuação 
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+float salario, aumento, salario_com_aumento; 
+
+     
+
+printf("Digite o salário inicial: "); 
+
+scanf("%f", &salario); 
+
+  
+
+salario_com_aumento = salario * 1.35; 
+
+  
+
+printf("O salário teve um aumento de 35 porcento e o valor atualizado ficou: %f", salario_com_aumento); 
+
+  
+
+} 
+
+Faça um algoritmo que receba e mostre as informações nota, idade e sexo (M ou F) de uma pessoa; 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+#include <locale.h> //biblioteca de acentuação 
+
+#include <string.h> 
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+float nota, idade; 
+
+char sexo; 
+
+   
+
+printf("Digite a nota da pessoa: "); 
+
+scanf("%f", &nota); 
+
+printf("Digite a idade: "); 
+
+scanf("%f", &idade); 
+
+printf("Digite o sexo: \n[]M ou []F "); 
+
+scanf(" %c", &sexo); 
+
+  
+
+printf("As informações fornecidas sobre a pessoa foram: \nNota: %.2f\nIdade: %.f\nSexo: %c", nota, idade, sexo); 
+
+} 
+
+Faça um algoritmo que calcule o cubo de um numero informado. 
+
+ 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+#include <locale.h> //biblioteca de acentuação 
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int numero, calculo; 
+
+     
+
+printf("Digite um número: "); 
+
+scanf("%d", &numero); 
+
+  
+
+calculo = numero * numero * numero; 
+
+  
+
+printf("O número informado ao cubo é igual a : %d", calculo); 
+
+} 
+
+ 
+
+Exercícios Slide 5 
+
+Criar um algoritmo que leia dois números inteiros e imprimir uma mensagem dizendo se são iguais ou diferentes:  
+
+#include<stdio.h> 
+
+int main () { 
+
+int num1, num2; 
+
+ 
+
+printf("Digite um numero inteiro: "); 
+
+scanf("%d", &num1); 
+
+printf("Digite um segundo numero inteiro: "); 
+
+scanf("%d", &num2); 
+
+ 
+
+if(num1 == num2){ 
+
+printf("Voce digitou duas vezes o mesmo numero!"); 
+
+} else { 
+
+printf("Os numeros inseridos sao diferentes."); 
+
+} 
+
+ 
+
+return 0; 
+
+} 
+
+ 
+
+Criar um algoritmo que leia um número, verifique se é múltiplo de 30 e imprimir uma das mensagens: “é múltiplo de 30” ou “não é múltiplo de 30”; 
+
+#include<stdio.h> 
+
+int main () { 
+
+int numero; 
+
+ 
+
+printf("Digite um numero inteiro: "); 
+
+scanf("%d", &numero); 
+
+ 
+
+if(numero%30==0){ 
+
+printf("Eh multiplo de 30."); 
+
+} else { 
+
+printf("Nao eh multiplo de 30."); 
+
+} 
+
+ 
+
+return 0; 
+
+} 
+
+ 
+
+Construir um algoritmo que entre com o ano de nascimento de uma pessoa e o ano atual. Imprimir a idade da pessoa. Não se esqueça de verificar se o ano de nascimento é um ano válido.  
+
+#include <stdio.h> 
+
+#include <stdlib.h> 
+
+#include <math.h> 
+
+#include <locale.h> 
+
+main () 
+
+{ 
+
+setlocale(LC_ALL, "Portuguese"); 
+
+ 
+
+int data, ano, idade; 
+
+ 
+
+printf ("\nDigite seu ano de nascimento: "); 
+
+scanf ("%d", &data); 
+
+printf ("\nDigite o ano atual: "); 
+
+scanf ("%d", &ano); 
+
+ 
+
+idade = ano - data; 
+
+ 
+
+if (data > ano) 
+
+{ 
+
+printf ("\nAno de nascimento digitado inválido!"); 
+
+} 
+
+else 
+
+printf ("\nSua idade: %d", idade); 
+
+ 
+
+ 
+
+printf ("\n"); 		 
+
+system ("pause");  
+
+} 
+
+ 
+ 
+
+Escreva um algoritmo que leia o valor da mensalidade do curso e a data atual (dd/mm/aaaa), se o dia for menor que o 7º dia corrente do mês, aplique o desconto de 15% e escreva o novo valor da mensalidade.  
+
+#include<stdio.h> 
+
+int main () { 
+
+float mensalidade, desconto, mens_atualizada; 
+
+int dia, mes, ano; 
+
+ 
+
+printf("Digite o valor da mensalidade do curso: "); 
+
+scanf("%f", &mensalidade); 
+
+printf("Digite o dia do mes: "); 
+
+scanf("%d", &dia); 
+
+printf("Digite o numero que representa o mes atual: "); 
+
+scanf("%d", &mes); 
+
+printf("Digite o ano atual: "); 
+
+scanf("%d", &ano); 
+
+printf("Data atual : %d/%d/%d\n\n", dia, mes, ano); 
+
+ 
+
+if(dia <= 7){ 
+
+desconto = mensalidade * 0.15;	 
+
+mens_atualizada = mensalidade - desconto; 
+
+printf("O valor da sua mensalidade com desconto eh de: %.2f", mens_atualizada); 
+
+} else { 
+
+printf("Valor da mensalidade: %.2f", mensalidade); 
+
+}			 
+
+return 0;	 
+
+} 
+ 
+
+Criar um algoritmo que leia o salário de uma e imprimir o desconto do INSS segundo os dados abaixo:  
+
+- menor ou igual a R$ 600 􏰅 isento; 
+- maior que R$ 600 e menor que R$ 1.200 􏰅 20% 
+- maior que R$ 1.200 e menor ou igual a 2.000 􏰅 25% 
+- maior que R$ 2.000 􏰅 30% 
+
+#include<stdio.h> 
+
+int main () { 
+
+ float salario, desconto_inss, valor_salario; 
+
+ 
+
+printf("Digite o valor do salario: "); 
+
+scanf("%f", &salario); 
+
+ 
+
+if(salario <= 600){ 
+
+printf("Nenhum desconto foi atribuído."); 
+
+} 
+
+else if (salario <= 1200){ 
+
+desconto_inss = salario * 0.20; 
+
+valor_salario = salario - desconto_inss; 
+
+printf("Seu salario atualizado: %.2f", valor_salario); 
+
+} else if (salario <= 2000){ 
+
+desconto_inss = salario * 0.25; 
+
+valor_salario = salario - desconto_inss; 
+
+printf("Seu salario atualizado: %.2f", valor_salario); 
+
+} else { 
+
+desconto_inss = salario * 0.30; 
+
+valor_salario = salario - desconto_inss; 
+
+printf("Seu salario atualizado: %.2f", valor_salario); 
+
+} 
+
+ 
+
+return 0; 
+
+ 
+
+} 
+
+Exercicios Slide 6 
+
+Crie um algoritmo que receba um  valor de um emprestimo e mostre as seguinte opções aos usuários: 
+
+A) 30% de aumento 
+
+b) 40% de aumento  
+
+c) 50% de aumento 
+
+A) 60% de aumento 
+
+No final mostre o valor de entrada e o valor de saída após o calculo; 
+
+#include <stdio.h>  
+
+#include <locale.h>  
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, ""); 
+
+float emprestimo, aumento; 
+
+int opcao; 
+
+do { 
+
+printf("Simule seu empréstimo \n"); 
+
+printf("Digite o valor: "); 
+
+scanf("%f", &emprestimo); 
+
+printf("Escolha uma opção: \n"); 
+
+printf("1 A) - 30 porcento de aumento\n"); 
+
+printf("2 B) - 40 porcento de aumento\n"); 
+
+printf("3 C) - 50 porcento de aumento\n"); 
+
+printf("4 D) - 60 porcento de aumento\n"); 
+
+printf("5 Ou pressione '0' para cancelar a solicitação\n"); 
+
+scanf("%d", &opcao); 
+
+if(opcao == 1){ 
+
+aumento = emprestimo * 1.30; 
+
+printf("\nO valor do emprestimo é %.2f ", emprestimo); 
+
+printf("\nO valor de saída do emprestimo é de: %.2f\n\n", aumento); 
+
+} else if(opcao == 2){ 
+
+aumento = emprestimo * 1.40; 
+
+printf("\nO valor do emprestimo é %.2f ", emprestimo); 
+
+printf("\nO valor de saída do emprestimo é de: %.2f\n\n", aumento); 
+
+} else if(opcao == 3){ 
+
+aumento = emprestimo * 1.50; 
+
+printf("\nO valor do emprestimo é %.2f ", emprestimo); 
+
+printf("\nO valor de saída do emprestimo é de: %.2f\n\n", aumento); 
+
+} else if(opcao == 4){ 
+
+aumento = emprestimo * 1.60; 
+
+printf("\nO valor do emprestimo é %.2f ", emprestimo); 
+
+printf("\nO valor de saída do emprestimo é de: %.2f\n\n", aumento); 
+
+} else if(opcao == 0){ 
+
+printf("Você escolheu sair da simulação!"); 
+
+} else { 
+
+printf("Opção inválida!\n\n"); 
+
+} 
+
+} while( opcao != 0); 
+
+} 
+
+Crie um algoritmo que receba um valor de um número e calcule a raiz quadrada; 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+#include <locale.h> //biblioteca de acentuação 
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int numero, calculo; 
+
+     
+
+printf("Digite um número: "); 
+
+scanf("%d", &numero); 
+
+  
+
+calculo = numero * numero; 
+
+  
+
+printf("A raiz quadrada do número é igual a : %d", calculo); 
+
+  
+
+return 0; 
+
+} 
+
+Digite um número e se for maior de 50, calcule a raiz quadrada, senão calcule o cubo desse numero; 
+
+ 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+#include <locale.h> //biblioteca de acentuação 
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int numero, calculo; 
+
+     
+
+printf("Digite um número: "); 
+
+scanf("%d", &numero); 
+
+  
+
+if(numero > 50){ 
+
+calculo = numero * numero; 
+
+printf("A raiz quadrada do número é igual a : %d", calculo); 
+
+} else { 
+
+calculo = numero * numero * numero; 
+
+printf("A raiz cúbica do número é igual a : %d", calculo); 
+
+} 
+
+return 0; 
+
+} 
+
+ 
+
+Exercícios Slide 7 
+
+Escreva um algoritmo que leia os números maiores que 0 enquanto a sua soma não ultrapasse 10, escreva o sucessor do número:  
+
+ 
+
+#include <stdio.h>  
+
+#include <locale.h>  
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int numero, soma = 0; 
+
+do{ 
+
+printf("Digite um número maior que 0: "); 
+
+scanf("%d", &numero); 
+
+soma += numero; 
+
+printf("Total até o momento: %d\n", soma); 
+
+ 
+
+}while(soma < 10); 
+
+  
+
+return 0; 
+
+  
+
+} 
+
+Escreva um algoritmo que leia os números informados e imprimir o dobro de cada número. O algoritmo acaba quando entrar com o número -99:  
+
+ 
+
+#include <stdio.h>  
+
+#include <locale.h>  
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int numero, dobro; 
+
+do{ 
+
+printf("Digite um número: "); 
+
+scanf("%d", &numero); 
+
+dobro = numero * numero; 
+
+printf("Dobro do número:%d \n", dobro); 
+
+ 
+
+}while(numero != -99); 
+
+ 
+
+return 0; 
+
+} 
+
+Faça um algoritmo para entrar com números enquanto forem positivos e imprimir quantos números foram informados:  
+
+ 
+
+#include <stdio.h>  
+
+#include <locale.h>  
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int numero, contador = 0; 
+
+do{ 
+
+printf("Digite um número positivo: "); 
+
+scanf("%d", &numero); 
+
+if(numero > 0){ 
+
+contador += 1; 
+
+} 
+
+ 
+
+}while(numero > 0); 
+
+ 
+
+printf("Total de números informados:  %d", contador); 
+
+  
+
+return 0; 
+
+  
+
+} 
+
+ 
+
+Faça um algoritmo para entrar com números positivos e imprimir a média dos números informados:  
+
+ 
+
+#include <stdio.h>  
+
+#include <locale.h>  
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int numero, soma = 0, contador = 0, media; 
+
+do{ 
+
+printf("Digite um número positivo: "); 
+
+scanf("%d", &numero); 
+
+if(numero > 0){ 
+
+contador += 1; 
+
+soma += numero; 
+
+} 
+
+media = soma/contador; 
+
+ 
+
+}while(numero > 0); 
+
+ 
+
+printf("Total de números informados:  %d\n", contador); 
+
+printf("A média dos números é: %d", media); 
+
+return 0; 
+
+} 
+
+Escreva um algoritmo que leia os números menores que 20 e imprimir a soma somente dos números pares:  
+
+#include <stdio.h>  
+
+#include <locale.h>  
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int numero, soma = 0; 
+
+do{ 
+
+printf("Digite um número menor de 20: "); 
+
+scanf("%d", &numero); 
+
+if(numero % 2 == 0){ 
+
+soma += numero; 
+
+} 
+
+ 
+
+}while(numero < 20); 
+
+ 
+
+printf("Soma dos números pares:  %d", soma); 
+
+return 0; 
+
+} 
+
+Faça um algoritmo para escrever os números de 1 a 30 em ordem crescente; 
+
+#include <stdio.h>  
+
+#include <locale.h>  
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int i; 
+
+  
+
+for(i=1; i <= 30; i++){ 
+
+printf("%d\n", i); 
+
+} 
+
+} 
+
+Faça um algoritmo para escrever os números de 1 a 20 em ordem decrescente: 
+
+ 
+
+#include <stdio.h>  
+
+#include <locale.h>  
+
+  
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int i; 
+
+  
+
+for(i=20; i >= 1; i--){ 
+
+printf("%d\n", i); 
+
+} 
+
+} 
+
+ 
+
+Exercícios Slide 8 
+
+Faça um algoritmo para escrever números de 1 a 30 em ordem crescente:  
+
+#include <stdio.h>   
+
+  
+
+main ()  
+
+  
+
+{  
+
+  
+
+setlocale (LC_ALL, "");   
+
+  
+
+int i;  
+
+  
+
+for(i=1; i <= 30; i++){  
+
+  
+
+printf("%d\n", i);  
+
+  
+
+}  
+
+return 0; 
+
+} 
+
+Faça um algoritmo para escrever os números de 1 a 20 em ordem decrescente:  
+
+#include <stdio.h>   
+
+main () 
+
+{ 
+
+setlocale (LC_ALL, "");  
+
+int i; 
+
+  
+
+for(i=20; i >= 1; i--){ 
+
+printf("%d\n", i); 
+
+} 
+
+} 
+
+ 
+
+ 
+
+Faça um algoritmo que apresente a tabuada de multiplicar de um número qualquer  
+
+#include <stdio.h>   
+
+#include <locale.h>   
+
+  
+
+main () { 
+
+setlocale (LC_ALL, "");   
+
+int tabuada = 0; 
+
+     
+
+printf("\nDigite a tabuada que você deseja \n\t\t\t\n>>> "); 
+
+    scanf("%d", &tabuada); 
+
+  
+
+    for(int x = 1; x<=10; ++x){ 
+
+        printf("%dx%d = %d\n", x, tabuada, x * tabuada); 
+
+    }  
+
+    return 0; 
+
+} 
+
+ 
+
+Escreva um algoritmo que imprima os 10 primeiros números maiores que 100; 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+int main () 
+
+{ 
+
+for(int i=100; i <= 110; i++){ 
+
+printf("%d", i); 
+
+} 
+
+ 
+
+return 0; 
+
+} 
+
+ 
+
+Faça um algoritmo para ler 6 números e escrever quantos são pares; 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+#include<locale.h>   
+
+int main ()   
+
+{  
+
+setlocale(LC_ALL, "");  
+
+int numero, cont=0;  
+
+  
+
+for(int i=1; i <=6; i++){ 
+
+printf("Digite um número: ");  
+
+scanf("%d", &numero);  
+
+if(numero%2==0){  
+
+cont += 1;	 
+
+} 
+
+}  
+
+if(cont == 0){ 
+
+printf("Nenhum número par foi digitado!"); 
+
+} else { 
+
+printf("Foram digitados %d números pares.", cont); 
+
+} 
+
+  
+
+return 0;  
+
+} 
+
+ 
+
+Faça um algoritmo para ler 6 números e escrever a média dos números que são ímpares; 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+#include<locale.h> 
+
+int main () 
+
+{ 
+
+setlocale(LC_ALL, ""); 
+
+int i, numero, media, contador=0, soma=0; 
+
+for(int i=1; i <=6; i++){ 
+
+printf("Digite um número: "); 
+
+scanf("%d", &numero); 
+
+if(numero%2==1){ 
+
+contador += 1; 
+
+soma += numero; 
+
+}  
+
+} 
+
+  
+
+media = soma/contador; 
+
+printf("A média dos números ímpares é: %d", media); 
+
+ 
+
+return 0; 
+
+} 
+
+Faça um algoritmo que leia 5 números e escrever quantos estão no intervalo de 10 a 20 e quantos estão fora do intervalo. 
+
+#include <stdio.h> //biblioteca de entrada e saída 
+
+#include<locale.h> 
+
+int main () 
+
+{ 
+
+setlocale(LC_ALL, ""); 
+
+int i, numero, soma=0, soma2=0; 
+
+for(int i=1; i <=5; i++){ 
+
+printf("Digite um número: "); 
+
+scanf("%d", &numero); 
+
+if(numero>10 && numero<20){ 
+
+soma += 1; 
+
+} else { 
+
+soma2 += 1; 
+
+} 
+
+} 
+
+printf("Quantidade de números digitados que estão entre 10 e 20: %d\n", soma); 
+
+printf("Quantidade de números digitados fora deste intervalo: %d\n", soma2); 
+
+ 
+
+return 0; 
+
+} 
+
+ 
+ 
+
+ 
+ 
